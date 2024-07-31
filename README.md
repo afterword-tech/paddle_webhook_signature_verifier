@@ -1,6 +1,11 @@
 # Paddle webhook signature verifier for Python
 A Python package for verifying Paddle webhook signatures. Official Paddle SDKs are only available for PHP and Node.js. This packagage helps server side verification of Paddle webhook signatures if you are using a Python based backend framework like Django, Flask, FastAPI, etc.
 
+## Installation
+```bash
+pip install paddle-webhook-verification
+```
+
 ## Usage
 ### FastAPI example
 ```Python
@@ -53,3 +58,13 @@ def webhook(request):
     except ValueError as e:
         return JsonResponse({"error": str(e)}, status=400)
 ```
+
+## Contributing
+Contributions are welcome! Please fork the repository and submit a pull request with your improvements.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details
+
+## Contact
+For any questions or suggestions, feel free to open an issue or contact the maintainer at aneesh.arora.aa@gmail.com
+
