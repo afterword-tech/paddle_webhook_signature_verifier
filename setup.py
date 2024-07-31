@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="paddle-webhook-signature-verifier",
-    version="1.0.0",
+    version="1.0.2",
     py_modules=["paddle_webhook_signature_verifier"],
     install_requires=[],
     author="Aneesh Arora",

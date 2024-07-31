@@ -1,0 +1,3 @@
+build/
+dist/
+paddle_webhook_signature_verifier.egg-info/

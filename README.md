@@ -3,7 +3,7 @@ A Python package for verifying Paddle webhook signatures. Official Paddle SDKs a
 
 ## Installation
 ```bash
-pip install paddle-webhook-verification
+pip install paddle-webhook-signature-verifier
 ```
 
 ## Usage
