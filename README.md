@@ -3,7 +3,7 @@ A Python package for verifying Paddle webhook signatures. Official Paddle SDKs a
 
 ## Usage
 ### FastAPI example
-```
+```Python
 from fastapi import FastAPI, Request, Header, HTTPException
 from paddle_webhook_verification.handler import WebhookHandler
 
