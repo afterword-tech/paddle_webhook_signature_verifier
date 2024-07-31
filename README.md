@@ -5,7 +5,7 @@ A Python package for verifying Paddle webhook signatures. Official Paddle SDKs a
 ### FastAPI example
 ```Python
 from fastapi import FastAPI, Request, Header, HTTPException
-from paddle_webhook_verification.handler import WebhookHandler
+from paddle_webhook_signature_verifier import WebhookHandler
 
 app = FastAPI()
 handler = WebhookHandler(secret_key=b'your_secret_key')
@@ -22,7 +22,7 @@ async def webhook(request: Request, paddle_signature: str = Header(None)):
 ### Flask example
 ```Python
 from flask import Flask, request, abort
-from paddle_webhook_verification.handler import WebhookHandler
+from paddle_webhook_signature_verifier import WebhookHandler
 
 app = Flask(__name__)
 handler = WebhookHandler(secret_key=b'your_secret_key')
@@ -40,7 +40,7 @@ def webhook():
 ### Django example
 ```Python
 from django.http import JsonResponse
-from paddle_webhook_verification.handler import WebhookHandler
+from paddle_webhook_signature_verifier import WebhookHandler
 
 handler = WebhookHandler(secret_key=b'your_secret_key')
 
