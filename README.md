@@ -20,7 +20,7 @@ async def webhook(request: Request, paddle_signature: str = Header(None)):
         raise HTTPException(status_code=400, detail=str(e))
 ```
 ### Flask example
-```
+```Python
 from flask import Flask, request, abort
 from paddle_webhook_verification.handler import WebhookHandler
 
@@ -38,7 +38,7 @@ def webhook():
         abort(400, description=str(e))
 ```
 ### Django example
-```
+```Python
 from django.http import JsonResponse
 from paddle_webhook_verification.handler import WebhookHandler
 
